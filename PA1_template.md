@@ -46,7 +46,7 @@ ggplot(data = averages, aes(x = interval, y = steps)) + geom_line() + xlab("5-mi
     ylab("average number of steps taken")
 ```
 
-![image-2](image-2.png) 
+![image-2](instructions_fig/image-2.png) 
 
 
 On average across all the days in the dataset, the 5-minute interval contains
@@ -104,7 +104,7 @@ total.steps <- tapply(filled.data$steps, filled.data$date, FUN = sum)
 qplot(total.steps, binwidth = 1000, xlab = "total number of steps taken each day")
 ```
 
-![image-4](image-4.png) 
+![image-4](instructions_fig/image-4.png) 
 
 ```r
 mean(total.steps)
@@ -156,4 +156,4 @@ ggplot(averages, aes(interval, steps)) + geom_line() + facet_grid(day ~ .) +
     xlab("5-minute interval") + ylab("Number of steps")
 ```
 
-![image-6](image-6.png) 
+![image-6](instructions_fig/image-6.png) 
